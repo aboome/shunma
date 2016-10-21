@@ -1,0 +1,86 @@
+body{
+    background-color: #F0EFF5;
+}
+.sm-navbar{
+    background-color: #fff;
+}
+.row{
+    width: 100%;
+
+}
+.header div h1{
+    text-indent: 0.5em;
+}
+.user-main{
+    background-color: #fff;
+    margin-bottom: 52px;
+}
+.user-main p{
+    text-align: center;
+    font-size: 16px;
+    padding: 26px 0 5px 0;
+}
+.user-main .device{
+    padding: 0;
+    margin-bottom: -1px;
+    border-top:1px solid #ddd;
+    border-right:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    position: relative;
+    overflow: hidden;
+}
+.user-main .device-top {
+    background-color: #2aabd2;
+    padding: 0;
+    position: absolute;
+    top: 0px;
+}
+.user-main .device-top .device-status{
+    float: left;
+
+    height: 20px;
+    background-color: #dddddd;
+}
+.user-main .device-top .device-control{
+    float: right;
+
+    height: 20px;
+    background-color: #dddddd;
+}
+.user-main .device a{
+    text-decoration: none;
+    color: #869191;
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 60px;
+    padding-bottom: 10px;
+}
+.user-main .device a span{
+    display: block;
+    font-size: 16px;
+    padding-top: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.deviceLogo{
+    padding-right: 0;
+
+    vertical-align: middle;
+}
+
+.deviceName p{
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+
+}
+.addDevice{
+    float: right;
+}
+.deviceModel{
+    font-size: 12px !important;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>舜玛-预警列表</title>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="iconfont/iconfont.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/warning_list.css" rel="stylesheet">
+</head>
+<body>
+<div class="row header">
+    <div class="col-xs-2">
+        <a href="javascript:history.back();" class="glyphicon glyphicon-chevron-left"></a>
+    </div>
+    <div class="col-xs-10">
+        <h1>预警列表</h1>
+    </div>
+</div>
+<div class="user-main">
+    <ul class="list-group" id="warningList">
+
+    </ul>
+</div>
+</body>
+<script src="js/third/jquery-1.10.2.min.js"></script>
+<script src="js/third/jquery.cookie.js"></script>
+<script src="js/third/jquery.validate.js"></script>
+<script src="js/third/messages_zh.js"></script>
+<script src="js/third/juicer.js"></script>
+<script src="js/third/bootstrap.min.js"></script>
+<script src="js/third/layer/layer.js"></script>
+<script src="js/app.js"></script>
+<script src="js/yh_scripts/yhGo.js"></script>
+<script src="js/query_warning_list.js"></script>
+<script id="warningListTpl" type="text/template">
+    {@each list as it}
+    <li class="list-group-item sm-ellipsis">
+        <p class="warningContent sm-ellipsis">
+            <span class="iconfont icon-yujingshezhi"></span>
+            ${it.warnContent}
+        </p>
+        <p class="deviceName sm-ellipsis">
+            <span class="iconfont icon-cdmc"></span>
+            <span class="device">设备名称</span>
+            ${it.deviceName}
+        </p>
+        <p class="warningTime sm-ellipsis">
+            <span class="iconfont icon-time"></span>
+            <span class="device">预警时间</span>
+            ${it.createTime}
+        </p>
+        <p class="warningVal"><span>${it.warnValue}</span>${it.dataUnit}</p>
+    </li>
+    {@/each}
+</script>
+</html>

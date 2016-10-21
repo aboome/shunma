@@ -1,0 +1,100 @@
+body{
+    background-color: #F0EFF5;
+}
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+.user-main div{
+    padding: 0;
+    overflow: hidden;
+    white-space:nowrap;
+    text-overflow:ellipsis;
+}
+.user-main{
+
+    width: 100%;
+}
+.user-main p{
+    margin-bottom: 0;
+}
+.user-main .user-name{
+    font-size: 14px;
+    color: #62696F;
+}
+.user-main .sm-text{
+    font-size: 12px;
+    color: #A8B2B7;
+}
+.user-main .col-xs-3{
+    text-align: right;
+    height: 56px;
+    margin-top: -5px;
+}
+.header div h1{
+    text-indent: -4em;
+}
+
+.list-group{
+    width: 92%;
+    margin: 0 auto;
+}
+.list-group-item{
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 0;
+}
+.deviceInfo{
+    background-color: #E0FAFB;
+    padding: 10px !important;
+    border-radius: 6px;
+}
+.deviceInfo .sm-text{
+    font-size: 16px;
+    color: #889494;
+    padding: 2px 0;
+}
+.deviceInfo .sm-text span{
+    padding-left: 20px;
+    color: #62696F;
+}
+.user-name{
+    padding-bottom: 10px;
+}
+.user-name span{
+    font-size: 16px;
+}
+.control{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 16px;
+}
+.control a{
+    color: #57C4C7;
+}
+.control a:hover{
+    text-decoration: none;
+}
+.sm-btn-group{
+    width: 100%;
+    margin: 120px auto auto auto;
+}
+.sm-btn-group div{
+    text-align: center;
+}
+.sm-btn-group .sm-btn{
+    padding: 10px 40%;
+}
+.sm-btn-group .refuse{
+    background-color: #FF7F7F !important;
+    border: 1px solid #FF7F7F !important;
+}
+.sm-btn-group .refuse:focus{
+    background-color: #FF7F7F !important;
+    border: 1px solid #FF7F7F !important;
+}
+.sm-btn-group .refuse:hover{
+    background-color: #FF7F7F !important;
+    border: 1px solid #FF7F7F !important;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>舜玛-修改设备</title>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reg.css" rel="stylesheet">
+    <link href="css/device.css" rel="stylesheet">
+</head>
+<body>
+<div class="row header">
+    <div class="col-xs-2">
+        <a href="javascript:history.back();" class="glyphicon glyphicon-chevron-left"></a>
+    </div>
+    <div class="col-xs-10">
+        <h1>修改设备</h1>
+    </div>
+</div>
+<div class="user-main">
+    <form class="form-horizontal" id="modifyDevice" role="form">
+        <div class="form-group form-group-underline">
+            <label for="mo-device-name" class="col-xs-2 control-label">名称</label>
+            <div class="col-xs-10">
+                <input type="text" class="form-control" id="mo-device-name" name="deviceName" value="">
+            </div>
+        </div>
+        <div class="form-group form-group-underline">
+            <label for="device-model" class="col-xs-2 control-label">型号</label>
+            <div id="deviceModelSelect" class="col-xs-10">
+
+            </div>
+        </div>
+        <div class="form-group form-group-underline">
+            <label for="mo-device-area" class="col-xs-2 control-label">场地</label>
+            <div class="col-xs-10">
+                <input type="text" class="form-control" id="mo-device-area" name="deviceDp" value="" placeholder="输入设备场地">
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="sm-col">
+                <button type="button" id="modify-device" class="btn btn-default sm-btn">提交</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+<script src="js/third/jquery-1.10.2.min.js"></script>
+<script src="js/third/jquery.cookie.js"></script>
+<script src="js/third/jquery.validate.js"></script>
+<script src="js/third/messages_zh.js"></script>
+<script src="js/third/juicer.js"></script>
+<script src="js/third/bootstrap.min.js"></script>
+<script src="js/third/layer/layer.js"></script>
+<script src="js/app.js"></script>
+<script src="js/yh_scripts/yhGo.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/check_validate_code.js"></script>
+<script src="js/query_device_model_list.js"></script>
+<script src="js/modify_device.js"></script>
+<script src="js/third/base64.js"></script>
+<script src="js/yh_scripts/yhLayer.js"></script>
+<script script id="deviceModelTpl" type="text/template">
+    <select class="form-control sm-select" id="device-model" name="deviceModel">
+        <option value="">选择设备型号</option>
+        {@each list as it, index}
+        <option value="${it.deviceModelId}">${it.deviceModel}</option>
+        {@/each}
+    </select>
+</script>
+</html>

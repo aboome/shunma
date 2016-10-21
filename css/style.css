@@ -1,0 +1,149 @@
+/*清除浮动*/
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+
+body{
+    font-family: '微软雅黑';
+}
+.header{
+    height: 60px;
+    background-color: #57C4C7;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.header div{
+    text-align: center;
+}
+.header div a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 32px;
+    outline: none;
+}
+.header div h1{
+    font-size: 20px;
+    color: #fff;
+    text-indent: -4.8em;
+    margin-top: 30px;
+}
+.header .col-xs-2{
+    text-align: left;
+}
+.sm-btn{
+    border: 1px solid #57C4C7;
+    background-color: #57C4C7;
+    color: #fff;
+    padding: 10px 45%;
+    outline: none;
+}
+.sm-btn:hover{
+    color: #fff;
+    border: 1px solid #57C4C7;
+    background-color: #57C4C7;
+    outline: none;
+}
+.sm-btn:focus{
+    color: #fff;
+    border: 1px solid #57C4C7;
+    background-color: #57C4C7;
+    outline: none;
+}
+.btn-default:active:hover{
+    color:#fff;
+    background-color: #57C4C7;
+    border-color: #57C4C7;
+}
+.user-main{
+    width: 90%;
+    margin: 70px auto;
+}
+/*.user-main label{
+    padding-top: 8px;
+}*/
+.user-main input{
+    border:0;
+    box-shadow: none;
+}
+.form-control{
+    font-size: 12px;
+    padding-top: 0;
+}
+.form-control:focus{
+    border-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    box-shadow: none;
+}
+.col-xs-2{
+    width: 22%;
+}
+.col-xs-8{
+    width: 56%;
+    padding-left: 0;
+}
+.col-xs-10{
+    width: 78%;
+    padding-left: 0;
+}
+.form-group-underline{
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.sm-col{
+    position: relative;
+    min-height: 1px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* 导航栏 */
+.sm-navbar .nav-tabs{
+    border-bottom: none;
+}
+.sm-navbar .nav-tabs>li{
+    margin-bottom: -2px;
+    width: 33.3333333%;
+    border-left: 1px solid #dddddd
+}
+.sm-navbar .nav-tabs>li:first-child{
+    border-left: none;
+}
+.sm-navbar .nav-tabs>li>a{
+    border-radius: 0;
+    margin: 0;
+    border-top: 1px solid #dddddd;
+    box-shadow: 0 -2px 1px #eeeeee;
+    color: #859090;
+}
+.sm-navbar .nav>li>a{
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+.sm-navbar .nav-tabs>li.active>a{
+    border: 0;
+    background-color: #009591;
+    border-top: none;
+    color: #fff;
+}
+.error{
+    color: #FF0000;
+    font-size: 12px;
+    font-weight: 100;
+}
+.iconfont{
+    margin-right: 6px;
+}
+/*
+.layui-layer-content{
+    left: 45%;
+}*/
+.btn-default[disabled]{
+    background-color: #A8E1E3 !important;
+}

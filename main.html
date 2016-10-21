@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0"/>
+    <title>舜玛-设备详情</title>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="top bg-div">
+    <div class="row main-title">
+        <div class="col-xs-2">
+            <a href="device_list.html" class="glyphicon glyphicon-chevron-left"></a>
+        </div>
+    </div>
+    <a href="javascript:;" id="warning-info" class="col-xs-2 warning-info">
+        <img src="images/nowarning.png">
+    </a>
+    <div class="temperature">
+        <span class="temp-text">实测温度</span>
+        <span id="temperature">
+            <span class="temp-num" id="temp-num"></span>
+        </span>
+        <!--温度-->
+        <span id="data-uuid" style="display: none"></span>
+    </div>
+    <div class="refresh">
+        <a href="javascript:;" id="refresh"><p>刷新设备</p></a>
+    </div>
+    <div class="setting row">
+        <div class="col-xs-4">
+            <a href="javascript:;" id="set-temp">
+                <p>设置温度</p>
+                <P>
+                    <span class="set-temp" id="setTempValue"></span>
+                </P>
+            </a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;" id="setTopValue">
+                <p>预警上限</p>
+                <span class = "set-temp" id="topValue"></span>
+            </a>
+        </div>
+        <div class="col-xs-4">
+            <a href="javascript:;" id="setBotValue">
+                <p>预警下限</p>
+                <span class = "set-temp" id="botValue"></span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="user-main">
+    <ul class="list-group" id="deviceDetailHtml">
+        <li class="list-group-item row" style="display: none">
+            <p class="col-xs-6">设备ID</p>
+            <p class="col-xs-6" id="deviceId"></p>
+        </li>
+        <li class="list-group-item row">
+            <p class="col-xs-6 left">设备名称</p>
+            <p class="col-xs-6 right" id="deviceName"></p>
+        </li>
+        <li class="list-group-item row">
+            <p class="col-xs-6 left">设备IME号</p>
+            <p class="col-xs-6 right" id="deviceIME"></p>
+        </li>
+        <li class="list-group-item row">
+            <p class="col-xs-6 left">设备型号</p>
+            <p class="col-xs-6 right" id="deviceModel"></p>
+        </li>
+        <li class="list-group-item row">
+            <p class="col-xs-6 left">设备场地</p>
+            <p class="col-xs-6 right" id="dpName"></p>
+        </li>
+        <li class="list-group-item main-btn row">
+            <a href="javascript:;" id="delete" class="btn btn-default col-xs-6 btn-left">
+                <span class="sm-icon sm-icon-delete" id="sm-icon-delete"></span>
+                <span class="text">解除绑定</span>
+            </a>
+            <a href="javascript:;" id="modify" class="btn btn-default col-xs-6 btn-right">
+                <span class="sm-icon sm-icon-modify" id="sm-icon-modify"></span>
+                <span class="text">修改信息</span>
+            </a>
+        </li>
+    </ul>
+</div>
+</body>
+<script src="js/third/jquery-1.10.2.min.js"></script>
+<script src="js/third/jquery.cookie.js"></script>
+<script src="js/third/jquery.validate.js"></script>
+<script src="js/third/messages_zh.js"></script>
+<script src="js/third/juicer.js"></script>
+<script src="js/third/bootstrap.min.js"></script>
+<script src="js/third/layer/layer.js"></script>
+<script src="js/app.js"></script>
+<script src="js/yh_scripts/yhGo.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/open_page.js"></script>
+<script src="js/query_device_detail.js"></script>
+<script src="js/delete_device.js"></script>
+<script src="js/query_device_sensor_data.js"></script>
+<script src="js/query_warning_config.js"></script>
+<script src="js/yh_scripts/yhLayer.js"></script>
+<script src="js/query_member_base_info.js"></script>
+</html>

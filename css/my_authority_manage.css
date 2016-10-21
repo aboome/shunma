@@ -1,0 +1,65 @@
+.header .col-xs-8{
+    width: 56%;
+}
+.header div h1{
+    text-indent: 0;
+}
+.header .del{
+    margin-top: 30px;
+    text-align: right;
+}
+.user-main .col-xs-4{
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+    float: right;
+}
+
+.list-group{
+    width: 92%;
+    margin: 0 auto;
+}
+.list-group-item{
+    border: 0;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+.user-name{
+    padding-bottom: 10px;
+}
+.user-name span{
+    font-size: 16px;
+}
+.deviceInfo{
+    background-color: #E0FAFB;
+    padding: 10px !important;
+    border-radius: 6px;
+}
+.deviceInfo .sm-text{
+    font-size: 16px;
+    color: #889494;
+    padding: 2px 0;
+}
+.deviceInfo .sm-text span{
+    padding-left: 20px;
+}
+.control{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 12px;
+}
+.control a{
+    text-decoration: none;
+}
+.control .auth{
+    color: #57C4C7;
+}
+.control .deleteThis{
+    color: #fff !important;
+    background-color: #F14848;
+    padding: 4px 8px;
+    margin-left: 5px;
+    border-radius: 20px;
+}

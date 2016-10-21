@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>舜玛-我的申请</title>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="iconfont/iconfont.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reviewed.css" rel="stylesheet">
+    <link href="css/my_application.css" rel="stylesheet">
+</head>
+<body>
+<div class="row header">
+    <div class="col-xs-2">
+        <a href="user_center.html" class="glyphicon glyphicon-chevron-left"></a>
+    </div>
+    <div class="col-xs-10">
+        <h1>我的申请</h1>
+    </div>
+</div>
+<div class="user-main">
+    <ul class="list-group" id="application">
+
+    </ul>
+</div>
+</body>
+<script src="js/third/jquery-1.10.2.min.js"></script>
+<script src="js/third/jquery.cookie.js"></script>
+<script src="js/third/jquery.validate.js"></script>
+<script src="js/third/messages_zh.js"></script>
+<script src="js/third/juicer.js"></script>
+<script src="js/third/bootstrap.min.js"></script>
+<script src="js/third/layer/layer.js"></script>
+<script src="js/app.js"></script>
+<script src="js/yh_scripts/yhGo.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/check_validate_code.js"></script>
+<script src="js/query_apply_authority.js"></script>
+<script id="applicationTpl" type="text/template">
+    {@each list as it ,index}
+    <li class="list-group-item row">
+        <div class="col-xs-12">
+            <p class="user-name"><span class="iconfont icon-user"></span><span class="user-phone">${it.ownerName}</span></p>
+            <div class="deviceInfo">
+                <p class="sm-text device-name">设备名称&nbsp;<span class="name">${it.deviceName}</span></p>
+                <p class="sm-text device-no">网关IEE号<span class="no">${it.deviceUuid}</span></p>
+            </div>
+        </div>
+        <div class="control">
+            {@if it.auditStatus == '00'}
+            <span class="delay-review">待审核</span>
+            {@else if it.auditStatus == '10' && it.auditResult == '20'}
+            <span class="not-pass">未通过</span>
+            {@else if it.auditResult == '10' && it.authType == '10'}
+            <span class="pass-control">已通过(控制)</span>
+            {@else if it.auditResult == '10' && it.authType == '20'}
+            <span class="pass-control">已通过(只读)</span>
+            {@/if}
+        </div>
+    </li>
+    {@/each}
+</script>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>舜玛-注册</title>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reg.css" rel="stylesheet">
+</head>
+<body>
+    <div class="row header">
+        <div class="col-xs-2">
+            <a href="login.html" class="glyphicon glyphicon-chevron-left"></a>
+        </div>
+        <div class="col-xs-10">
+            <h1>注册</h1>
+        </div>
+    </div>
+    <div class="user-main">
+        <p>输入正确的手机号码，确保安全</p>
+        <form class="form-horizontal" id="userInfo" role="form">
+            <div class="form-group form-group-underline">
+                <label for="userPhone" class="col-xs-2 control-label">手机号</label>
+                <div class="col-xs-10">
+                    <input type="text" class="form-control" id="userPhone" name="userPhone" placeholder="手机号将作为唯一账号" value="" maxlength="11">
+                </div>
+            </div>
+            <div class="form-group form-group-underline">
+                <label for="checkCode" class="col-xs-2 control-label">校验码</label>
+                <div class="col-xs-10">
+                    <input type="text" class="form-control" id="checkCode" name="checkCode" placeholder="请输入校验码" value="" maxlength="6">
+                    <input type="button" class="recheckCode" id="sendCode" value="发送校验码">
+                </div>
+            </div>
+            <div class="form-group form-group-underline">
+                <label for="regPsw" class="col-xs-2 control-label">密码</label>
+                <div class="col-xs-10">
+                    <input type="password" class="form-control" id="regPsw" name="password" placeholder="请输入密码" value="">
+                </div>
+            </div>
+            <div class="form-group form-group-underline">
+                <label for="password_confirm" class="col-xs-2 control-label">确认</label>
+                <div class="col-xs-10">
+                    <input type="password" class="form-control" id="password_confirm" name="password_confirm" placeholder="请确认密码" value="">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="sm-col">
+                    <button type="button" id="register" class="btn btn-default sm-btn validateCode">注册</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="js/third/jquery-1.10.2.min.js"></script>
+<script src="js/third/jquery.cookie.js"></script>
+<script src="js/third/jquery.validate.js"></script>
+<script src="js/third/messages_zh.js"></script>
+<script src="js/third/juicer.js"></script>
+<script src="js/third/bootstrap.min.js"></script>
+<script src="js/third/layer/layer.js"></script>
+<script src="js/app.js"></script>
+<script src="js/yh_scripts/yhGo.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/check_validate_code.js"></script>
+<script src="js/reg.js"></script>
+<script src="js/third/md5.js"></script>
+</html>

@@ -1,0 +1,73 @@
+body,.user-main{
+    width: 100%;
+    color: #859090;
+    background-color: #F0EFF5;
+}
+.warning-title{
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+}
+.list-group-item{
+    border: 0;
+    padding: 10px;
+    margin-top: 10px;
+}
+.list-group-item:first-child{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.list-group-item:last-child{
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.list-group-item p{
+    font-size: 16px;
+    margin: 0 0 6px;
+    color: #8A9595;
+}
+.warningContent .iconfont{
+    font-size: 20px;
+}
+.deviceName .iconfont{
+    font-size: 18px;
+    color: #8A9595;
+}
+.warningTime .iconfont{
+    font-size: 18px;
+    color: #8A9595;
+}
+.deviceName{
+    color: #253635 !important;
+}
+.warningTime{
+    margin-bottom: 0 !important;
+    color: #253635 !important;
+}
+.header div h1{
+    text-indent: -4em;
+}
+.warningContent{
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 10px;
+}
+.device{
+    margin-right: 5%;
+    color: #8A9595;
+}
+.warningVal{
+    color: #ff0000 !important;
+    position: absolute;
+    top: 3px;
+    right: 8%;
+}
+.warningVal span{
+    font-size: 1.8em;
+}
+.sm-ellipsis{
+    display:block;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}

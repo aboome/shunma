@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>舜玛-设备列表</title>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <!--<link href="css/reg.css" rel="stylesheet">-->
+    <link href="css/device-list.css" rel="stylesheet">
+</head>
+<body>
+<div class="row header">
+    <div class="col-xs-2">
+        <a href="user_center.html" class="glyphicon glyphicon-user" id="userCenter"></a>
+     </div>
+    <div class="col-xs-8">
+        <h1>设备列表</h1>
+    </div>
+    <div class="col-xs-2">
+        <a class="glyphicon glyphicon-plus addDevice" href="add_device.html"></a>
+    </div>
+</div>
+<div class="user-main row" id="deviceHtml">
+
+</div>
+<!--<div class="sm-navbar navbar-fixed-bottom">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="javascript:;" class="glyphicon glyphicon-th" id="deviceList"></a></li>
+        <li><a href="javascript:;" class="glyphicon glyphicon-home" id="main"></a></li>
+        <li><a href="javascript:;" class="glyphicon glyphicon-user" id="userCenter"></a></li>
+    </ul>
+</div>-->
+</body>
+<script src="js/third/jquery-1.10.2.min.js"></script>
+<script src="js/third/jquery.cookie.js"></script>
+<script src="js/third/jquery.validate.js"></script>
+<script src="js/third/messages_zh.js"></script>
+<script src="js/third/juicer.js"></script>
+<script src="js/third/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/yh_scripts/yhGo.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/check_validate_code.js"></script>
+<script src="js/query_device_list.js"></script>
+<script src="js/open_page.js"></script>
+<script src="js/third/layer/layer.js"></script>
+<script src="js/yh_scripts/yhLayer.js"></script>
+
+<script id="deviceTpl" type="text/template">
+    {@each list as it, index}
+    <div class="col-xs-12 device" data-value="${it.deviceName}" data-id="${it.deviceId}" data-uuid="${it.deviceUuid}" data-model="${it.deviceModel}" data-modelId="${it.deviceModelId}">
+        <a href="javascript:;" class="device-detail row">
+            <span class="col-xs-2 deviceLogo" style="padding-top:20px "><img src="images/device.png" style="width: 30%;"></span>
+            <span class="col-xs-10 deviceName">
+                <p>${it.deviceName}</p>
+                <p class="deviceModel">${it.deviceModel}</p>
+                <p>${it.deviceUuid}</p>
+            </span>
+        </a>
+    </div>
+    {@/each}
+</script>
+</html>

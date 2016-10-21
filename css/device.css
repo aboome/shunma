@@ -1,0 +1,24 @@
+.user-main{
+    padding-top: 20px;
+}
+.sm-select{
+    width: 60%;
+    border: none;
+    box-shadow: none;
+}
+.device-model{
+    height: 34px;
+}
+#mo-device-name{
+    background-color: transparent;
+}
+.layui-layer-page .layui-layer-content{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.add-label{
+    color: #ff0000;
+    font-size: 12px;
+    font-weight: normal;
+    padding-left: 26%;
+}

@@ -1,0 +1,60 @@
+body{
+    background-color: #F0EFF5;
+}
+.sm-navbar{
+    background-color: #fff;
+}
+.user-main{
+    margin-top: 70px;
+    width: 100%;
+}
+.sm-btn{
+    padding: 10px 43%;
+    margin-top: 10%;
+}
+.row{
+    margin: 0;
+}
+.user-main .row{
+    padding: 20px;
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+    background-color: #fff;
+    margin-bottom: -1px;
+}
+.user-main{
+    position: relative;
+}
+.user-main .row label{
+    font-size: 16px;
+    color: #859091;
+    margin: auto;
+    padding-left: 6%;
+    font-weight: normal;
+    background-color: transparent;
+}
+.radio-pic-checked{
+    padding: 0 !important;
+    background-color: #00aa00;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    margin-top: -3px;
+    background: #FFFFFF url("../images/radio.png") no-repeat top;
+    background-size: 100%;
+}
+.radio-pic{
+    padding: 0 !important;
+    background-color: #00aa00;
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    margin-top: -3px;
+    background: #FFFFFF url("../images/radio.png") no-repeat bottom;
+    background-size: 100%;
+}
+
+input[type=radio]{
+    font-size:   9pt;
+    height:   18px;
+}

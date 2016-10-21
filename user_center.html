@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>舜玛-个人中心</title>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="iconfont/iconfont.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reg.css" rel="stylesheet">
+    <link href="css/user_center.css" rel="stylesheet">
+</head>
+<body>
+<div class="row header">
+    <div class="col-xs-2">
+        <a href="device_list.html" class="glyphicon glyphicon-chevron-left"></a>
+    </div>
+    <div class="col-xs-10">
+        <h1>个人中心</h1>
+    </div>
+</div>
+<div class="user-main">
+    <ul class="jt-table-view">
+        <li class="jt-table-view-cell row">
+            <div class="jt-head-img col-xs-4">
+                <img class="jt-pull-left head-img" id="head-img" src="images/user-logo.png">
+            </div>
+            <div class="jt-media-body col-xs-8">
+                <span id="currentUser"></span>
+            </div>
+        </li>
+    </ul>
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="modify_password.html">
+                <span class="iconfont icon-mima"></span>修改密码
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="my_authority_manage.html">
+                <span class="iconfont icon-settings"></span>权限管理
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="my_audit.html">
+                <span class="badge sm-badge-success" id="myAuditNo"></span>
+                <span class="iconfont icon-check"></span>我的审核
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="my_application.html">
+                <span class="badge sm-badge-success" id="myApplyNo"></span>
+                <span class="iconfont icon-edit-copy"></span>我的申请
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="warning_list.html">
+                <span class="badge sm-badge-yellow" id="myWarnNo"></span>
+                <span class="iconfont icon-yujingshezhi"></span>预警消息
+            </a>
+        </li>
+    </ul>
+    <div class="sm-col">
+        <button type="button" id="logout" class="btn btn-default sm-btn">退出登录</button>
+    </div>
+</div>
+<!--<div class="sm-navbar navbar-fixed-bottom">
+    <ul class="nav nav-tabs">
+        <li><a href="javascript:;" class="glyphicon glyphicon-th" id="deviceList"></a></li>
+        <li><a href="javascript:;" class="glyphicon glyphicon-home" id="main"></a></li>
+        <li class="active"><a href="javascript:;" class="glyphicon glyphicon-user" id="userCenter"></a></li>
+    </ul>
+</div>-->
+</body>
+<script src="js/third/jquery-1.10.2.min.js"></script>
+<script src="js/third/jquery.cookie.js"></script>
+<script src="js/third/jquery.validate.js"></script>
+<script src="js/third/messages_zh.js"></script>
+<script src="js/third/juicer.js"></script>
+<script src="js/third/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/yh_scripts/yhGo.js"></script>
+<script src="js/yh_scripts/yhLayer.js"></script>
+<script src="js/third/layer/layer.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/check_validate_code.js"></script>
+<script src="js/logout.js"></script>
+<script src="js/open_page.js"></script>
+<script src="js/query_member_base_info.js"></script>
+</html>

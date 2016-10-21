@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>舜玛-我的权限管理</title>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="iconfont/iconfont.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reviewed.css" rel="stylesheet">
+    <link href="css/my_authority_manage.css" rel="stylesheet">
+</head>
+<body>
+<div class="row header">
+    <div class="col-xs-2">
+        <a href="user_center.html" class="glyphicon glyphicon-chevron-left"></a>
+    </div>
+    <div class="col-xs-8">
+        <h1>我的权限管理</h1>
+    </div>
+    <div class="col-xs-2 del">
+        <a href="javascript:;" data-value="11" id="delete">删除</a>
+        <a href="javascript:;" id="cancel" style="display: none;">取消</a>
+    </div>
+</div>
+<div class="user-main">
+    <ul class="list-group" id="applyAuthority">
+
+    </ul>
+</div>
+</body>
+<script src="js/third/jquery-1.10.2.min.js"></script>
+<script src="js/third/jquery.cookie.js"></script>
+<script src="js/third/jquery.validate.js"></script>
+<script src="js/third/messages_zh.js"></script>
+<script src="js/third/juicer.js"></script>
+<script src="js/third/bootstrap.min.js"></script>
+<script src="js/third/layer/layer.js"></script>
+<script src="js/app.js"></script>
+<script src="js/yh_scripts/yhGo.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/check_validate_code.js"></script>
+<script src="js/query_authority_manage.js"></script>
+<script src="js/delete_authority.js"></script>
+<script id="applyAuthorityTpl" type="text/template">
+    {@each list as it ,index}
+    <li class="list-group-item row">
+        <div class="col-xs-12">
+            <p class="user-name"><span class="iconfont icon-user"></span><span class="user-phone">${it.userName}</span></p>
+            <div class="deviceInfo">
+                <p class="sm-text device-name">设备名称&nbsp;<span class="name">${it.deviceName}</span></p>
+                <p class="sm-text device-no">网关IEE号<span class="no">${it.deviceUuid}</span></p>
+            </div>
+        </div>
+        <div class="control">
+            {@if it.authType == 20}
+            <a href="javascript:;" class="read-only auth" data-userId="${it.userId}" data-uuid="${it.deviceUuid}" data-type="${it.authType}">只读</a>
+            {@else if it.authType == 10}
+            <a href="javascript:;" class="read-only auth" data-userId="${it.userId}" data-uuid="${it.deviceUuid}" data-type="${it.authType}">控制</a>
+            {@/if}
+            <a href="javascript:;" style="display: none;" class="deleteThis" data-userId="${it.userId}" data-uuid="${it.deviceUuid}">删除</a>
+        </div>
+    </li>
+    {@/each}
+</script>
+</html>

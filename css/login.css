@@ -1,0 +1,24 @@
+.user-logo{
+    width: 120px;
+    height: 120px;
+    /*border: 1px solid #dddddd;*/
+    /*border-radius: 22px;*/
+    margin: 20% auto;
+    padding: 6px;
+}
+.user-footer{
+    position: absolute;
+    bottom: 20px;
+    width: 90%;
+    text-align: center;
+    padding-top: 10px;
+}
+.user-footer a{
+    text-decoration: none;
+    color: #007AFF;
+    outline: none;
+}
+.spliter{
+    color: #C1BBC1;
+    padding: 0 10px;
+}

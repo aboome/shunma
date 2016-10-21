@@ -1,0 +1,14 @@
+.user-main{
+    padding-top: 20px;
+}
+
+.layui-layer-title{
+    background-color: transparent !important;
+}
+.layui-layer-page .layui-layer-content{
+    padding: 0 20px;
+}
+.layui-layer-btn .layui-layer-btn0{
+    border-color: #57C4C7 !important;
+    background-color: #57C4C7 !important;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+    <title>舜玛-审核权限</title>
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="iconfont/iconfont.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/reviewed.css" rel="stylesheet">
+</head>
+<body>
+<div class="row header">
+    <div class="col-xs-2">
+        <a href="user_center.html" class="glyphicon glyphicon-chevron-left"></a>
+    </div>
+    <div class="col-xs-10">
+        <h1>审核权限</h1>
+    </div>
+</div>
+<div class="user-main">
+    <ul class="list-group" id="reviewAuthority">
+
+    </ul>
+</div>
+</body>
+<script src="js/third/jquery-1.10.2.min.js"></script>
+<script src="js/third/jquery.cookie.js"></script>
+<script src="js/third/jquery.validate.js"></script>
+<script src="js/third/messages_zh.js"></script>
+<script src="js/third/juicer.js"></script>
+<script src="js/third/bootstrap.min.js"></script>
+<script src="js/third/layer/layer.js"></script>
+<script src="js/app.js"></script>
+<script src="js/yh_scripts/yhGo.js"></script>
+<script src="js/yh_scripts/yhLayer.js"></script>
+<script src="js/validate.js"></script>
+<script src="js/check_validate_code.js"></script>
+<script src="js/query_review_authority.js"></script>
+<script src="js/add_review_authority.js"></script>
+<script src="js/third/base64.js"></script>
+
+<script id="reviewAuthorityTpl" type="text/template">
+    {@each list as it ,index}
+    <li class="list-group-item row">
+        <div class="col-xs-12">
+            <p class="user-name"><span class="iconfont icon-user"></span><span class="user-phone">${it.userName}</span></p>
+            <div class="deviceInfo">
+                <p class="sm-text device-name">设备名称&nbsp;<span class="name">${it.deviceName}</span></p>
+                <p class="sm-text device-no">网关IEE号<span class="no">${it.deviceUuid}</span></p>
+            </div>
+        </div>
+        <div class="sm-btn-group row" style="display:none">
+            <div class="col-xs-6"><button type="button" class="btn btn-default sm-btn refuse" data-auditId="${it.id}">拒绝</button></div>
+            <div class="col-xs-6"><button type="button" class="btn btn-default sm-btn agree" data-auditId="${it.id}">同意</button></div>
+        </div>
+        <div class="control review">
+            <a href="javascript:;">
+                <span class="iconfont icon-shenhe"></span>审核
+            </a>
+        </div>
+    </li>
+    {@/each}
+</script>
+
+</html>

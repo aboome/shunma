@@ -1,0 +1,31 @@
+.user-main p{
+    text-align: center;
+    font-size: 16px;
+    padding: 26px 0 5px 0;
+}
+.col-xs-2{
+    width:26%;
+    overflow: hidden;
+}
+.col-xs-10{
+    width:74%;
+    overflow: hidden;
+}
+#checkCode{
+    width: 50%;
+}
+.recheckCode{
+    width: 45%;
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    right: 10%;
+    top: 25%;
+    background-color: #57C4C7;
+    border-left: 1px solid #aaa;
+}
+
+.sm-btn{
+    padding: 10px 42%;
+    margin-top: 50px;
+}
